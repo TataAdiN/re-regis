@@ -54,7 +54,6 @@
                       please fill in your password
                     </div>
                   </div>
-
                   <div class="form-group">
                     <div class="custom-control custom-checkbox">
                       <input type="checkbox" name="remember" class="custom-control-input" tabindex="3" id="remember-me">
@@ -74,7 +73,7 @@
               Don't have an account? <a href="auth-register.html">Create One</a>
             </div>
             <div class="simple-footer">
-              Copyright &copy; Stisla 2018
+              Copyright &copy; 2019, Universitas ABC 
             </div>
           </div>
         </div>
