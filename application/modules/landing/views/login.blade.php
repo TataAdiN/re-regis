@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
@@ -10,11 +11,11 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
   <!-- CSS Libraries -->
-  <link rel="stylesheet" href="<?= base_url("node_modules/bootstrap-social/bootstrap-social.css")?> ">
+  <link rel="stylesheet" href="<?= base_url("node_modules/bootstrap-social/bootstrap-social.css") ?> ">
 
   <!-- Template CSS -->
   <link rel="stylesheet" href="<?= base_url("assets/css/style.css") ?>">
-  <link rel="stylesheet" href="<?= base_url("assets/css/components.css")?>">
+  <link rel="stylesheet" href="<?= base_url("assets/css/components.css") ?>">
 </head>
 
 <body>
@@ -24,43 +25,27 @@
         <div class="row">
           <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4">
             <div class="login-brand">
-              <img src="<?= base_url("assets/img/stisla-fill.svg")?>" alt="logo" width="100" class="shadow-light rounded-circle">
+              <img src="<?= base_url("assets/img/stisla-fill.svg") ?>" alt="logo" width="100" class="shadow-light rounded-circle">
             </div>
 
             <div class="card card-primary">
-              <div class="card-header"><h4>Login</h4></div>
-
+              <div class="card-header">
+                <h4>Login</h4>
+              </div>
               <div class="card-body">
-                <form method="POST" action="<?= base_url('student') ?>" class="needs-validation" novalidate="">
+                <form method="POST" action="<?= base_url('student') ?>" class="needs-validation">
                   <div class="form-group">
-                    <label for="email">Email</label>
-                    <input id="email" type="email" class="form-control" name="email" tabindex="1" required autofocus>
-                    <div class="invalid-feedback">
-                      Please fill in your email
-                    </div>
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control" name="username" tabindex="1" required autofocus>
                   </div>
-
                   <div class="form-group">
-                    <div class="d-block">
-                    	<label for="password" class="control-label">Password</label>
-                      <div class="float-right">
-                        <a href="auth-forgot-password.html" class="text-small">
-                          Forgot Password?
-                        </a>
-                      </div>
-                    </div>
+                    <label for="password" class="control-label">Password</label>
                     <input id="password" type="password" class="form-control" name="password" tabindex="2" required>
-                    <div class="invalid-feedback">
-                      please fill in your password
-                    </div>
                   </div>
-                  <div class="form-group">
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" name="remember" class="custom-control-input" tabindex="3" id="remember-me">
-                      <label class="custom-control-label" for="remember-me">Remember Me</label>
-                    </div>
+                  <div class="alert alert-info">
+                    <div class="alert-title">Info</div>
+                    Gunakan username & password akun SNM, SBM, atau Mandiri untuk login.
                   </div>
-
                   <div class="form-group">
                     <button type="submit" class="btn btn-primary btn-lg btn-block" tabindex="4">
                       Login
@@ -73,7 +58,7 @@
               Don't have an account? <a href="auth-register.html">Create One</a>
             </div>
             <div class="simple-footer">
-              Copyright &copy; 2019, Universitas ABC 
+              Copyright &copy; 2019, Universitas ABC
             </div>
           </div>
         </div>
@@ -92,9 +77,10 @@
   <!-- JS Libraies -->
 
   <!-- Template JS File -->
-  <script src="<?= base_url("assets/js/scripts.js") ?>"></script>
+  <script src=" <?= base_url("assets/js/scripts.js") ?>"></script>
   <script src="<?= base_url("assets/js/custom.js") ?>"></script>
 
   <!-- Page Specific JS File -->
 </body>
+
 </html>

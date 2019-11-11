@@ -29,13 +29,7 @@
             <li class="nav-item active"><a href="#" class="nav-link">Universitas Orang Berdasi</a></li>
           </ul>
         </div>
-        <form class="form-inline ml-auto">
-        </form>
-        <ul class="navbar-nav navbar-right">
-          <li href="a.html"><a href="#" class="nav-link nav-link-lg beep"><i class="far fa-user"></i></a></li>
-        </ul>
       </nav>
-
       <nav class="navbar navbar-secondary navbar-expand-lg">
         <div class="container">
           <ul class="navbar-nav">
@@ -70,7 +64,7 @@
                 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               </div>
               <div class="card-footer bg-whitesmoke">
-                This is card footer
+                Batas Upload, 20 Agustus 2020
               </div>
             </div>
             <div class="card">
@@ -86,7 +80,7 @@
                 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               </div>
               <div class="card-footer bg-whitesmoke">
-                This is card footer
+                Batas Pengumpulan Berkas Fisik, 5 September 2020
               </div>
             </div>
           </div>
