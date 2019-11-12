@@ -5,7 +5,8 @@ class Student extends MY_Controller {
 
 	public function index()
 	{
-		$data['title'] = "Dashboard";
+		$data['title'] = "Pengumuman";
+		$data['num'] = 1;
 		$data['type'] = "student";
 		$this->blade->render('student', $data);
 	}

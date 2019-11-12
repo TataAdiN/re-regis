@@ -7,8 +7,6 @@ class Landing extends MY_Controller {
 		$this->load->view('welcome_message');
 	}
 	public function auth(){
-		$data['title'] = "Dashboard";
-		$data['type'] = "student";
-		$this->blade->render('login', $data);
+		$this->blade->render('login');
 	}
 }
