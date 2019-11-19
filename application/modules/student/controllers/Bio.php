@@ -15,7 +15,7 @@ class Bio extends MY_Controller {
 		if($this->input->post()){
             $result = $this->m_student->simpanBiodata($this->input->post(), $this->m_login->getIDAkun());
             if ($result) {
-                //redirect(base_url('student/bio'));
+                redirect(base_url('student/bio'));
             }
         }	
         $data['title'] = "Biodata";

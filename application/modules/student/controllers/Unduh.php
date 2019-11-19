@@ -5,7 +5,7 @@ class Unduh extends MY_Controller {
 
     public function __construct(){
         parent::__construct();
-		$this->initFtp2();
+		$this->initFtp();
 	}
 	
 	public function index()
@@ -26,13 +26,13 @@ class Unduh extends MY_Controller {
 		} */
 		/* $this->ftp->upload(getcwd().'/img/gambar.jpg', '/data/gambar.jpg'); */
 
-		$this->ftp->download('/data/gambar.jpg' ,getcwd().'/img/gambar2.jpg','auto');
+		//$this->ftp->download('/data/gambar.jpg' ,getcwd().'/img/gambar2.jpg','auto');
 
 		// ganti '/image/pc-android-1jutaan.jpg' dibawah
-/* 		// sesuai yang di storage FreeNAS
+ 		// sesuai yang di storage FreeNAS
 		$this->ftp->download('/image/pc-android-1jutaan.jpg' ,getcwd().'/img/gambar.jpg','auto');
 		$this->blade->render('unduh/student', $data);
-		$this->ftp->close(); */
+		$this->ftp->close(); 
 		//unlink(getcwd().'/img/gambar.jpg');
 	}
 

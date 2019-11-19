@@ -7,20 +7,21 @@ class Landing extends MY_Controller {
     {
         parent::__construct();
 		$this->load->model('Model_student', 'm_student');
+		$this->load->model('Model_berkas', 'm_berkas');
 		$this->load->model('Model_login', 'm_login');
 	}
 
 	public function index()
 	{
-		$this->load->view('welcome_message');
+		$data['berkas'] = $this->m_berkas->ambilBerkas()->result();
+		$this->blade->render('welcome', $data);
 	}
 
 	public function auth(){
 		if($this->input->post()){
 			$result = $this->m_login->login($this->input->post('username'), $this->input->post('password'));
-			echo var_dump($result);
             if ($result['status'] == 1) {
-                redirect(base_url('student/bio'));
+                redirect(base_url('student'));
             }
         }	
 		$this->blade->render('login');

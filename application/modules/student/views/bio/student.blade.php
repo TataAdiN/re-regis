@@ -35,8 +35,8 @@
                 <label>Jenis Kelamin</label>
                 <select class="form-control" name="jenis_kelamin" required="">
                     <option value="">--- pilih jenis kelamin ---</option>
-                    <option value="Laki - Laki">Laki - Laki</option>
-                    <option value="Perempuan">Perempuan</option>
+                    <option value="Laki - Laki" {{ $biodata->jenis_kelamin == 'Laki - Laki' ? 'selected' : '' }}>Laki - Laki</option>
+                    <option value="Perempuan" {{ $biodata->jenis_kelamin == 'Perempuan' ? 'selected' : '' }}>Perempuan</option>
                 </select>
                 <div class="invalid-feedback">
                     Jenis kelamin belum dipilih
@@ -46,12 +46,12 @@
                 <label>Agama</label>
                 <select class="form-control"  name="agama" required="">
                     <option value="">--- pilih Agama ---</option>
-                    <option value="Islam">Islam</option>
-                    <option value="Kristen Protestan">Kristen Protestan</option>
-                    <option value="Katolik">Katolik</option>
-                    <option value="Hindu">Hindu</option>
-                    <option value="Buddha">Buddha</option>
-                    <option value="Kong Hu Cu">Kong Hu Cu</option>
+                    <option value="Islam" {{ $biodata->agama == 'Islam' ? 'selected' : '' }}>Islam</option>
+                    <option value="Kristen Protestan" {{ $biodata->agama == 'Kristen Protestan' ? 'selected' : '' }}>Kristen Protestan</option>
+                    <option value="Katolik" {{ $biodata->agama == 'Katolik' ? 'selected' : '' }}>Katolik</option>
+                    <option value="Hindu" {{ $biodata->agama == 'Hindu' ? 'selected' : '' }}>Hindu</option>
+                    <option value="Buddha" {{ $biodata->agama == 'Buddha' ? 'selected' : '' }}>Buddha</option>
+                    <option value="Kong Hu Cu" {{ $biodata->agama == 'Kong Hu Cu' ? 'selected' : '' }}>Kong Hu Cu</option>
                 </select>
                 <div class="invalid-feedback">
                     Agama belum dipilih

@@ -29,4 +29,9 @@ class Model_student extends CI_Model
             return false;
         }
     }
+    function ambilStudent(){
+        $this->db->select("student_no_daftar, student_nama");
+        $this->db->from($this->tableStudent);
+        return $this->db->get(); 
+    }
 }
