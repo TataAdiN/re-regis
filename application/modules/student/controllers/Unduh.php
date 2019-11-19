@@ -29,8 +29,11 @@ class Unduh extends MY_Controller {
 		//$this->ftp->download('/data/gambar.jpg' ,getcwd().'/img/gambar2.jpg','auto');
 
 		// ganti '/image/pc-android-1jutaan.jpg' dibawah
- 		// sesuai yang di storage FreeNAS
-		$this->ftp->download('/image/pc-android-1jutaan.jpg' ,getcwd().'/img/gambar.jpg','auto');
+		 // sesuai yang di storage FreeNAS
+		 header('Content-Type: application/vnd.jpg');
+		 header('Content-Disposition: attachment;filename="aaa.jpg"'); 
+		 header('Cache-Control: max-age=0');
+		$this->ftp->download('/image/pc-android-1jutaan.jpg', 'php://output','auto');
 		$this->blade->render('unduh/student', $data);
 		$this->ftp->close(); 
 		//unlink(getcwd().'/img/gambar.jpg');
