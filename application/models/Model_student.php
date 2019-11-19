@@ -34,4 +34,9 @@ class Model_student extends CI_Model
         $this->db->from($this->tableStudent);
         return $this->db->get(); 
     }
+    function ambilStudentFull(){
+        $this->db->select("student_id, student_no_daftar, student_nama, student_tmpt_lhr, student_tgl_lhr, agama, jenis_kelamin");
+        $this->db->from($this->tableStudent);
+        return $this->db->get(); 
+    }
 }
