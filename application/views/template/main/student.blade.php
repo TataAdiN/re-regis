@@ -69,9 +69,6 @@
             <li class="nav-item {{ $num == 3 ? 'active' : '' }}">
               <a href="{{ base_url('student/unggah') }}" class="nav-link"><i class="fas fa-upload"></i><span>Berkas Daftar Ulang</span></a>
             </li>
-            <li class="nav-item {{ $num == 4 ? 'active' : '' }}">
-              <a href="{{ base_url('student/unduh') }}" class="nav-link"><i class="fas fa-download"></i><span>Unduh Surat</span></a>
-            </li>
           </ul>
         </div>
       </nav>

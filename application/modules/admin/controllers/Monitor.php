@@ -29,4 +29,22 @@ class Monitor extends MY_Controller {
 		$this->blade->render('monitor/berkas', $data);
 	}
 
+	public function unduh($id_student, $id_berkas){
+		$this->initFtp();
+		$url_berkas = "/".$id_student."/".$id_berkas;
+		header('Content-Type: application/vnd.jpg');
+		header('Content-Disposition: attachment;filename='.$id_berkas.''); 
+		header('Cache-Control: max-age=0');
+	   $this->ftp->download('/image'.$url_berkas, 'php://output','auto');
+	}
+
+	public function initFtp()
+    {
+        $this->load->library('ftp');
+        $config['hostname'] = 'files.000webhost.com'; //ganti ini
+        $config['username'] = 'cobaftp'; //ganti ini
+        $config['password'] = '123123123'; //ganti ini
+        $config['debug']    = TRUE;
+        $this->ftp->connect($config);
+	}
 }

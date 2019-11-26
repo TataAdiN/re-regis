@@ -17,7 +17,7 @@
                 <div class="col-lg-8">
                     <div class="form-group">
                         <label>Berkas :  {{$b->nama_berkas}}</label><br/>
-                        <a class="btn btn-info btn-rounded m-b-10 m-l-5">Unduh Data</a>
+                        <a class="btn btn-info btn-rounded m-b-10 m-l-5" href="{{base_url('admin/monitor/unduh/'.$b->url_berkas)}}">Unduh Data</a>
                     </div>
                 </div>
             <?php
